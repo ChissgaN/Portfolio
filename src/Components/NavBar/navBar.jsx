@@ -1,32 +1,30 @@
 import React from "react";
 import "./navBar.css";
+import logo from "../../../public/logo 1.svg"
+import github from "../../../public/Vector.svg"
+import twitter from "../../../public/ant-design_twitter-circle-filled.svg"
+import linkedin from "../../../public/entypo-social_linkedin-with-circle.svg"
 
 export default function NavBar() {
   return (
     <nav className="d-flex justify-content-between navBar">
-      <div>
-        <img className="d-flex" src="/public/logo 1.svg" alt="" />
+      <div className="first">
+        <img className="d-flex" src={logo} alt="007" />
       </div>
 
-      <div className="d-flex">
+      <div className="d-flex second">
         <div className="d-flex justify-content-between opNav">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Tech Stack</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
+          <a className="letters" href="">Home</a>
+          <a className="letters" href="">About</a>
+          <a className="letters" href="">Tech Stack</a>
+          <a className="letters" href="">Projects</a>
+          <a className="letters" href="">Contact</a>
         </div>
 
-        <div>
-          <img className="me-3" src="/public/Vector.svg" alt="GitHub" />
-          <img className="me-3"
-            src="/public/ant-design_twitter-circle-filled.svg"
-            alt="Twitter"
-          />
-          <img className="me-3"
-            src="/public/entypo-social_linkedin-with-circle.svg"
-            alt="Linkedin"
-          />
+        <div className="spnIcons">
+          <img className="me-3 ms-3 spn" src={github} alt="GitHub" />
+          <img className="me-3 spn " src={twitter} alt="Twitter" />
+          <img className="me-3 spn" src={linkedin} alt="Linkedin" />
         </div>
       </div>
     </nav>

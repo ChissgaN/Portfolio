@@ -1,0 +1,57 @@
+.personalDiv {
+  width: 100%;
+  height: fit-content;
+  margin-top: 80px;
+}
+
+.first {
+  color: #d9d9d9;
+  font-family: Poppins;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
+
+.second {
+  background: var(
+    --Gradient-Heading,
+    linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
+
+.photo {
+  flex-shrink: 0;
+  border-radius: 230px;
+  border: 9px solid rgba(0, 192, 253, 1);
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  width: 349px;
+  height: 349px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .personalDiv > * {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    justify-content: space-between;
+  }
+
+  .second{
+    font-size: 28px;
+  }
+  .photo {
+    width: 200px; /* Ajusta el tamaño del elemento photo según tus preferencias */
+    height: 200px;
+  }
+}

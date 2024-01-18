@@ -1,10 +1,67 @@
 .navBar {
-  border: 1px solid gray;
   height: auto;
 }
 
+.opNav {
+  width: 100%;
+}
 
-.opNav{
-    width: 600px;
+@media (min-width: 600px) {
+  .opNav {
+    width: 600px; 
     margin-right: 10px;
+  }
+
+  .spnIcons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .spnIcons .spn {
+    width: auto;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .opNav {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .opNav > * {
+    width: 100%;
+    margin-bottom: 10px;
+    
+  }
+
+  .opNav > .second {
+    order: 2;
+  }
+
+  .opNav > .first {
+    order: 1;
+  }
+
+  .letters {
+    display: none;
+  }
+
+  .spnIcons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .spnIcons .spn {
+    width: auto;
+    margin-left: 10px;
+  }
+}
+
+.letters {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
 }
