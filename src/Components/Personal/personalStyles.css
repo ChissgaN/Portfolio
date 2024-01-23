@@ -1,7 +1,15 @@
+/* personalStyles.css */
+
 .personalDiv {
   width: 100%;
   height: fit-content;
   margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  max-width: 600px; /* Establece un ancho máximo para el contenedor de texto */
 }
 
 .first {
@@ -15,9 +23,7 @@
 }
 
 .second {
-  background: var(
-    --Gradient-Heading,
-    linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%));
+  background: var(--Gradient-Heading, linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,20 +44,27 @@
   height: 349px;
 }
 
-
 @media screen and (max-width: 600px) {
+  .personalDiv {
+    flex-direction: column; /* Cambia la dirección del flex container a columna */
+  }
+
   .personalDiv > * {
     width: 100%;
     margin: 0 auto;
     font-size: 28px;
-    justify-content: space-between;
   }
 
-  .second{
-    font-size: 28px;
-  }
   .photo {
-    width: 200px; /* Ajusta el tamaño del elemento photo según tus preferencias */
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
+  
+  .info {
+    max-width: 100%;
+  }
+}
+
+.photo:hover {
+  transform: scale(1.2);
 }

@@ -2,8 +2,9 @@ import React from "react";
 import "./navBar.css";
 import logo from "../../../public/logo 1.svg"
 import github from "../../../public/Vector.svg"
-import twitter from "../../../public/ant-design_twitter-circle-filled.svg"
 import linkedin from "../../../public/entypo-social_linkedin-with-circle.svg"
+import insta from "../../../public/instagram_f.svg"
+
 
 export default function NavBar() {
   return (
@@ -22,9 +23,16 @@ export default function NavBar() {
         </div>
 
         <div className="spnIcons">
-          <img className="me-3 ms-3 spn" src={github} alt="GitHub" />
-          <img className="me-3 spn " src={twitter} alt="Twitter" />
-          <img className="me-3 spn" src={linkedin} alt="Linkedin" />
+          <a href="https://github.com/ChissgaN">
+            <img className="me-3 ms-3 spn" src={github} alt="GitHub" />
+          </a>
+          <a href="https://www.instagram.com/chissgan?igsh=MXB3aDhlNGt1Z3Fncg%3D%3D&utm_source=qr">
+            <img className="me-3 spn " src={insta} alt="Instagram" />
+          </a>
+          <a href="">
+            <img className="me-3 spn" src={linkedin} alt="Linkedin" />
+          </a>
+          
         </div>
       </div>
     </nav>

@@ -1,11 +1,54 @@
-.divStack{
-    margin-top: 100px;
-}
+/* stackStyles.css */
 
-.lettersA{
+.divStack {
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  .lettersA {
     color: white;
-}
-
-.lettersB{
-    color: white;
-}
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .lettersB {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 150px;
+  }
+  
+  .iconsTech {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 60px;
+  }
+  
+  .iconsTech img {
+    width: 125px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .iconsTech img:hover {
+    transform: scale(1.5);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .iconsTech img {
+      width: 30%;
+      margin: 10px 0;
+    }
+    .iconsTech{
+        gap: 15px;
+    }
+  }
+  
